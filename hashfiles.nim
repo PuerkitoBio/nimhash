@@ -17,7 +17,7 @@ proc processPath(path: string) {.thread.} =
     md5Init(md5ctx)
 
     while true:
-        let line = readStr(strm, 1024)
+        let line = readStr(strm, 32 * 1024)
         if line.len == 0: break
         md5Update(md5ctx, line, line.len)
 
