@@ -36,6 +36,6 @@ user 0m2.188s
 sys  0m5.873s
 ```
 
-Of course I probably got a ton of things wrong in nim as this is my first go at it. As I understand it, nim's `threadpool` library uses OS threads, so that may explain part of it.
+Of course I probably got a ton of things wrong in nim as this is my first go at it. As I understand it, nim's `threadpool` library uses OS threads instead of "green"/lightweight m:n threads, so that may explain part of it.
 
 [nim]: http://nim-lang.org/
